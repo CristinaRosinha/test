@@ -4,3 +4,64 @@ h2{
 li{
   color:grey;
 }
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(-10px,1000px));
+    grid-template-rows: [row] auto [row] auto [row];
+    color: #444;
+  }
+
+.m2m_sit1 {
+    grid-column: col 0;
+    grid-row: row 1;
+}
+.m2m_sit2 {
+    grid-column: col 1;
+    grid-row: row 1;
+}
+.m2m_sit3 {
+    grid-column: col 2;
+    grid-row: row 1;
+}
+.m2m_tst {
+    grid-column: col 0;
+    grid-row: row 2;
+}
+.m2m_tst2 {
+    grid-column: col 1;
+    grid-row: row 2;
+}
+.m2m_tst3 {
+    grid-column: col 2;
+    grid-row: row 2;
+}
+.m2m_e2e {
+    grid-column: col 0;
+    grid-row: row 3;
+}
+.m2m_e2e1 {
+    grid-column: col 1;
+    grid-row: row 3;
+}
+.m2m_e2e2 {
+    grid-column: col 2;
+    grid-row: row 3;
+}
+.links {
+    background-color: GhostWhite;
+    color: ;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: Calibri;
+    font-size: x-large;
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+}
+.links:hover {
+  background: #8F1D14;
+  color:white;
+
+}
