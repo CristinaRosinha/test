@@ -38,7 +38,7 @@
       padding-right: 0px;
       padding-left: 0px;
   ">
-         
+
         <a class="navbar-brand" href="https://www.celfocus.com/home/">
            <img src="celfocus-white.png" width="180" height="30" alt="">
             </a>
@@ -121,6 +121,19 @@
           <li>tail -f vgpl03vr.dc-dublin.de-m2mscp-core-soap.log | grep username</li>
         </ul>
       </div>
+      <div id="RVALogsSTG" style="padding-left: 35px;">
+        <h4>Steps E2E</h4>
+        <ul class="List-LogsSTG">
+          <li>cssh username@47.73.66.{102,103}</li>
+          <li>Insert Password</li>
+          <li>sudo su - oracle</li>
+          <li>Insert Password</li>
+          <li>How to know the STG lane? On M2M Portal --> F12 --> Application --> ROUTEID</li>
+          <li><b>Lane1:</b> cd /var/SP/oracle/log/m2mscpapps/core</li>
+          <li><b>Lane2:</b> cd /var/SP/oracle/log/m2mscpapps2/core</li>
+          <li>tail -f vgpt07vr.dc-ratingen.de-m2mscp-core-soap.log | grep username</li>
+        </ul>
+      </div>
       <br>
       <h2 style="padding-left: 35px;">Microservices Access</h2>
       <div id="MicroservicesAccess" style="padding-left: 35px;">
@@ -167,13 +180,6 @@
         <br>
         <h2 style="padding-left: 35px;">Portal DB Access</h2>
         <div id="PortalDBAccess" style="padding-left: 35px;">
-          <h4>Portal DB E2E</h4>
-          <ul class="List-PortalDB">
-            <li>ssh username@vgpl03vr.dc-dublin.de</li>
-            <li>Insert Password</li>
-            <li>sudo su - oracle</li>
-            <li>portal_db</li>
-          </ul>
           <h4>Portal DB TST</h4>
           <ul class="List-PortalDBTST">
             <li>ssh username@vgpot3vr.dc-ratingen.de</li>
@@ -191,6 +197,20 @@
             <li>Insert Password</li>
             <li>sudo su - oracle</li>
             <li>sqlplus M2MSCPTSTLIT4_R2_0_1/M2MSCPTSTLIT4_R2_0_1@vono04cl-scan.dc-ratingen.de:33000/M2MPCUST.test.vis</li>
+          </ul>
+          <h4>Portal DB E2E</h4>
+          <ul class="List-PortalDB">
+            <li>ssh username@vgpl03vr.dc-dublin.de</li>
+            <li>Insert Password</li>
+            <li>sudo su - oracle</li>
+            <li>portal_db</li>
+          </ul>
+          <h4>Portal DB STG</h4>
+          <ul class="List-PortalDBSTG">
+            <li>ssh username@vgpt11vr</li>
+            <li>Insert Password</li>
+            <li>sudo su - oracle</li>
+            <li>sqlplus M2MSCP/M2MSCP@vgm2s19hr-vip.dc-ratingen.de:33020/M2MPCUSS_TAF.test.vis</li>
           </ul>
         </div>
         <br>
