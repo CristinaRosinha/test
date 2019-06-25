@@ -63,5 +63,8 @@ li{
 .links:hover {
   background: #8F1D14;
   color:white;
+}
 
+a{
+  color:grey;
 }
