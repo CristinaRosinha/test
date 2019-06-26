@@ -63,8 +63,14 @@
 
 
 <!-- eShop Upgrade-->
-     <script type="text/javascript"> 
-    alert("olaFDS");
-  </script> 
+     <script type="text/javascript">
+   function autorun()
+   {
+    alert("olá");
+   }
+   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+   else window.onload = autorun;
+  </script>
   </body>
   </html>
