@@ -66,7 +66,15 @@
      <script type="text/javascript">
    function autorun()
    {
-    alert("olá");
+    fetch('https://celfocusconfluence.atlassian.net/wiki/rest/api/content/1467089094?expand=body.export_view.value.webresource.tags.all', {
+  method: 'GET', // or 'PUT'
+
+  headers:{
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    'Authorization': 'Basic Y3Jpc3RpbmEucm9zaW5oYUBjZWxmb2N1cy5jb206YTZDenFNbWd1QmVCOXlhMUF1dXpERjYx'
+  }
+}) 
    }
    if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
    else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
